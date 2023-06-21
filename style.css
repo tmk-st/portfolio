@@ -1,0 +1,143 @@
+/* --------------------------------- */
+/* ----- 基本設定 -----*/
+/* --------------------------------- */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+@media (max-width: 1200px) {
+    html {
+      font-size: 90%;
+    }
+}
+  
+@media (max-width: 645px) {
+    html {
+      font-size: 80%;
+    }
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Goldman', cursive;
+    box-sizing: border-box;
+    color: #3D3D39;
+    background-color: #fdf9f2;
+    font-weight: 100;
+}
+
+body {
+    background-image: url(./images/circle.png), url(./images/circle.png);
+	background-position: left -10% top -10%, right -30% top 50%;
+	background-size: 70vw auto, 40vw auto;
+	background-repeat: no-repeat, no-repeat;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-left: 3rem;
+}
+a {
+    text-decoration: none;
+    cursor: default;
+    color: inherit;
+}
+
+/* --------------------------------- */
+/* ----- テキスト -----*/
+/* --------------------------------- */
+
+h1 {
+    font-family: 'Gloock', serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Gloock', serif;
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* --------------------------------- */
+/* ----- レイアウト -----*/
+/* --------------------------------- */
+section {
+    padding: 13rem;
+}
+
+section:first-child {
+    padding: 13rem 5rem;
+}
+
+.container {
+    /* width: 80vw; */
+    /* height: 30vw; */
+}
+
+/* --------------------------------- */
+/* ----- ヘッダー -----*/
+/* --------------------------------- */
+header {
+    padding-top: 2rem;
+    padding-right: 5rem;
+}
+
+header ul {
+    justify-content: end;
+}
+
+/* --------------------------------- */
+/* ----- top -----*/
+/* --------------------------------- */
+.top_title {
+    line-height: 1.4;
+}
+
+.top_title p {
+    font-size: 2rem;
+}
+
+.top_text {
+    text-align: right;
+}
+
+/* --------------------------------- */
+/* ----- about -----*/
+/* --------------------------------- */
+.about_content {
+    display: flex;
+}
+.prof_img {
+    width: 20vw;
+}
+
+/* --------------------------------- */
+/* ----- フッター -----*/
+/* --------------------------------- */
+footer {
+    padding-bottom: 2rem;
+}
+
+footer ul {
+    justify-content: center;
+}
