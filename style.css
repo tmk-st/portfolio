@@ -65,36 +65,32 @@ a:hover {
 
 .arrow {
 	position: relative;
-}
-
-.arrow::before,
-.arrow::after {
-    position: absolute;
-    top: 10px;
-    bottom: 27px;
-    left: 16px;
-    margin: auto;
-    content: "";
+    display: inline-block;
     vertical-align: middle;
-}
-
-.arrow::after {
-    left: 19px;
-    width: 16px;
-    height: 16px;
-    border-top: 1px solid;
-    border-right: 1px solid;
+    line-height: 1;
+    width: 0.1em;
+    height: 1em;
+    background: currentColor;
+    top: 0.4em;
 }
 
 .arrow::before {
-    width: 22px;
-    height: 1px;
-    background: #3D3D39;
-    transform: rotate(135deg);
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    position: absolute;
+    top: -0.05em;
+    right: 50%;
+    box-sizing: border-box;
 }
 
 .arrow:hover:before {
-    background: #D1C6B5;
+    color: #D1C6B5;
 }
 
 /* --------------------------------- */
@@ -321,7 +317,11 @@ h1 span {
 }
 
 .work_detail a {
-    display: flex;
+    display: flex;;
+}
+
+.work_detail h4 {
+    padding-right: 1em;
 }
 
 .work_img {
@@ -334,19 +334,14 @@ h1 span {
     line-height: 2;
 }
 
-.stickarrow {
-    width: 40px;
-    height: 8px;
-    border-bottom: 1px solid;
-    border-right: 1px solid;
-    transform: skew(45deg);
-    margin-top: 15px;
-    margin-left: 10px;
+.diagonal {
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
 }
 
-.stickarrow:hover {
-    color: #D1C6B5;
-}
 /* --------------------------------- */
 /* ----- contact -----*/
 /* --------------------------------- */
@@ -364,39 +359,16 @@ address {
     font-size: 18px;
 }
 
+.back_to_top .arrow {
+    transition: color 0.2s ease;
+}
+
 .back_to_top:hover {
     color: #D1C6B5;
 }
 
-.arrow-up {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1;
-    position: relative;
-    width: 0.1em;
-    height: 1em;
-    background: currentColor;
-    transition: color 0.2s ease;
-
-}
-  
-.arrow-up::before {
-    content: '';
-    width: 0.65em;
-    height: 0.65em;
-    border: 0.1em solid currentColor;
-    border-left: 0;
-    border-bottom: 0;
-    transform: rotate(-45deg);
-    transform-origin: top right;
-    position: absolute;
-    top: -0.05em;
-    right: 50%;
-    box-sizing: border-box;
-}
-
 .back_to_top p {
-    padding-top: 0.5em;
+    padding-top: 1em;
 }
 
 /* --------------------------------- */
