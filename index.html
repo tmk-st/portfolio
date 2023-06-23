@@ -6,12 +6,12 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Caudex&family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Gloock&family=Goldman:wght@400&family=Marcellus&family=Noto+Sans+JP:wght@300;600;700;800;900&family=Playfair:ital,wght@0,900;1,600;1,700;1,900&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Goldman:wght@400&family=Playfair:ital,wght@0,900;1,600;1,700;1,900&family=Raleway&family=Zen+Kaku+Gothic+Antique:wght@300;400;500&display=swap" rel="stylesheet">
     </head>
 
     <body>
 
-        <header>
+        <header id="header">
             <nav>
                 <ul>
                     <li><a href=#about>About</a></li>
@@ -27,50 +27,160 @@
             <section class="top">
                 <div class="container">
                     <div class="top_title">
-                        <h1>PORTFOLIO</h1>
+                        <h1>PORTFOLIO<span>2023</span></h1>
                         <h2>Tomoka Sato</h2>
                         <p>web engineer</p>
                     </div>
-                    <div class="top_text">
-                        <p>2022-2023</p>
+                    <div class="lang_btn" id="lang_btn">
+                        <div class="jp_btn" id="jp_btn">JP</div> / <div class="en_btn" id="en_btn">EN</div>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section id="about">
                 <div class="container">
                     <h3>About</h3>
                     <div class="about_content">
                         <div class="about_textbox">
-                            <p>あああ</p>
+                            <p class="jp">北海道出身、神奈川県在住の26歳エンジニア。<br>
+                                アパレル企業の販売員として従事した後、IT業界に興味を持ち24歳で転職。<br>
+                                現在はマッチングアプリの開発に携わり、フロント画面の実装やPHPフレームワークを使用したAPI開発を担当しています。
+                            </p>
+                            <p class="en">I'm 26 years old engineer from Kanagawa prefecture born in Hokkaido, Japan.<br>
+                                After working as store clerk in clothing store, I moved to IT industry because of being interested.<br>
+                                Currently I'm working in dating app development team as front-end and back-end engineer.
+                            </p>
                         </div>
                         <div class="about_img">
-                            <img src="./images/IMG_0237.jpg" class="prof_img" loading="lazy" alt="prof_img">
+                            <img src="./images/IMG_1218.PNG" class="prof_img" loading="lazy" alt="prof_img">
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- skill -->
-            <section></section>
+            <section id="skill">
+                <div class="container">
+                    <h3>Skill</h3>
+                    <div class="skill_content">
+                        <div class="skill_box">
+                            <h4 class="jp">フロントエンド</h4>
+                            <h4 class="en">Front-end</h4>
+                            <ul class="en_Gothic">
+                                <li id="html">HTML</li>
+                                <li id="css">CSS</li>
+                                <li id="javascript">JavaScript</li>
+                                <li id="jquery">jQuery</li>
+                                <li id="bootstrap">Bootstrap</li>
+                            </ul>
+                        </div>
+                        <div class="skill_box">
+                            <h4 class="jp">バックエンド</h4>
+                            <h4 class="en">Back-end</h4>
+                            <ul class="en_Gothic">
+                                <li id="php">PHP</li>
+                                <li id="laravel">Laravel</li>
+                                <li id="fuelphp">FuelPHP</li>
+                                <li id="mysql">MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill_box">
+                            <h4 class="jp">その他ツール</h4>
+                            <h4 class="en">DevOps</h4>
+                            <ul class="en_Gothic">
+                                <li id="vscode">VSCode</li>
+                                <li id="git">Git/GitHub</li>
+                                <li id="docker">Docker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <!-- work -->
-            <section></section>
+            <section id="works">
+                <div class="container">
+                    <h3>Works</h3>
+                    <ul class="works_content">
+                        <li>
+                            <img src="./images/portfolio.png" class="work_img" loading="lazy" alt="work">
+                            <div class="work_detail en_Gothic">
+                                <a href="#header">
+                                    <h4 class="jp">ポートフォリオ</h4>
+                                    <h4 class="en">My portfolio</h4>
+                                    <div class="stickarrow"></div>
+                                    <!-- <div class="arrow"></div> -->
+                                </a>
+                                <p>HTML / CSS / JavaScript</p>
+                                <div class="work_description">
+                                    <p class="jp">当サイトを制作しました。</p>
+                                    <p class="en">I made this website.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/furniture.png" class="work_img" loading="lazy" alt="work">
+                            <div class="work_detail en_Gothic">
+                                <a href="#">
+                                    <h4 class="jp">家具ECサイト（LP）</h4>
+                                    <h4 class="en">Interior e-commerce website</h4>
+                                    <div class="arrow"></div>
+                                </a>
+                                <p>HTML / CSS / JavaScript</p>
+                                <div class="work_description">
+                                    <p class="jp">家具販売サイトのLPを自主制作しました。</p>
+                                    <p class="en">I made interior e-commerce website on independent production.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/dentalclinic.png" class="work_img" loading="lazy" alt="work">
+                            <div class="work_detail en_Gothic">
+                                <a href="#">
+                                    <h4 class="jp">歯科医院ホームページ</h4>
+                                    <h4 class="en">Dental clinic website</h4>
+                                    <div class="arrow"></div>
+                                </a>
+                                <p>Laravel</p>
+                                <div class="work_description">
+                                    <p class="jp">PHPフレームワークを使用し、お問い合わせフォーム付きの歯科医院ホームページを自主制作しました。</p>
+                                    <p class="en">I made dental clicinc website with contact form by using php framework on independent production.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-            <!-- contact -->
-            <section></section>
+            <section id="contact">
+                <div class="container">
+                    <h3>Contact</h3>
+                    <address>
+                        <p class="en_Gothic">abcedefg@gmail.com</p>
+                    </address>
+                    <div class="back_to_top">
+                        <span class="arrow-up"></span>
+                        <p class="en_Gothic">
+                            <a href="#header">Back to Top</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
             <nav>
                 <ul>
-                    <li>About</li>
-                    <li>Skill</li>
-                    <li>Work</li>
-                    <li>Contact</li>
+                    <li><a href=#about>About</a></li>
+                    <li><a href=#skill>Skill</a></li>
+                    <li><a href=#works>Works</a></li>
+                    <li><a href=#contact>Contact</a></li>
                 </ul>
             </nav>
+            <div class="copyright en_Gothic">
+                <small>© 2023 Tomoka Sato</small>
+            </div>
         </footer>
+
+        <script src="script.js" defer></script>
 
     </body>
 </html>

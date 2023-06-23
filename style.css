@@ -31,10 +31,10 @@ html {
 }
 
 body {
-    background-image: url(./images/circle.png), url(./images/circle.png);
-	background-position: left -10% top -10%, right -30% top 50%;
-	background-size: 70vw auto, 40vw auto;
-	background-repeat: no-repeat, no-repeat;
+    background-image: url(./images/circle.png), url(./images/circle.png), url(./images/circle.png);
+	background-position: left -10% top -5%, right -30% top 30%, left 50% bottom -30%;
+	background-size: 70vw auto, 40vw auto, 100vw auto;
+	background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 img {
@@ -51,10 +51,50 @@ ul {
 li {
     margin-left: 3rem;
 }
+
 a {
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
     color: inherit;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #D1C6B5;
+}
+
+.arrow {
+	position: relative;
+}
+
+.arrow::before,
+.arrow::after {
+    position: absolute;
+    top: 10px;
+    bottom: 27px;
+    left: 16px;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.arrow::after {
+    left: 19px;
+    width: 16px;
+    height: 16px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+.arrow::before {
+    width: 22px;
+    height: 1px;
+    background: #3D3D39;
+    transform: rotate(135deg);
+}
+
+.arrow:hover:before {
+    background: #D1C6B5;
 }
 
 /* --------------------------------- */
@@ -76,17 +116,33 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+h4 {
+    padding-bottom: 1rem;
+    font-size: 23px;
+    height: 3rem;
+}
+
+.jp, .en_Gothic {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: 400;
+}
+
+.en {
+    font-family: 'Raleway', sans-serif;
 }
 
 /* --------------------------------- */
 /* ----- レイアウト -----*/
 /* --------------------------------- */
 section {
-    padding: 13rem;
+    padding: 10rem;
 }
 
 section:first-child {
-    padding: 13rem 5rem;
+    padding: 10rem 5rem;
 }
 
 .container {
@@ -109,6 +165,12 @@ header ul {
 /* --------------------------------- */
 /* ----- top -----*/
 /* --------------------------------- */
+h1 span {
+    font-family: 'Goldman', cursive;
+    font-size: 0.8rem;
+    vertical-align: text-top;
+    padding-left: 5px;
+}
 .top_title {
     line-height: 1.4;
 }
@@ -117,8 +179,19 @@ header ul {
     font-size: 2rem;
 }
 
-.top_text {
-    text-align: right;
+.lang_btn {
+    display: flex;
+    justify-content: end;
+}
+
+.jp_btn, .en_btn {
+    margin: 0 5px;
+    transition: color 0.2s ease;
+}
+
+.jp_btn:hover, .en_btn:hover {
+    cursor: pointer;
+    color: #D1C6B5;
 }
 
 /* --------------------------------- */
@@ -126,18 +199,220 @@ header ul {
 /* --------------------------------- */
 .about_content {
     display: flex;
+    line-height: 2;
 }
 .prof_img {
     width: 20vw;
+    margin-left: auto;
+    margin-right: 0;
+}
+.about_textbox, .about_img {
+    width: 50%;
+}
+
+.about_textbox {
+    height: 250px;
+}
+
+/* --------------------------------- */
+/* ----- skill -----*/
+/* --------------------------------- */
+.skill_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_box {
+    width: 20%;
+}
+
+.skill_content ul {
+    display: block;
+}
+
+.skill_content li {
+    margin-left: 0;
+    padding-bottom: 5px;
+    position: relative;
+    border-bottom: 5px solid #E5E5E5;
+}
+
+.skill_content li:not(:first-child) {
+    padding-top: 30px;
+}
+.skill_content li::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    background: #1B7AEA;
+}
+
+#html::before {
+    width: 80%;
+}
+
+#css::before {
+    width: 70%;
+}
+
+#javascript::before {
+    width: 50%;
+}
+
+#jquery::before {
+    width: 60%;
+}
+
+#bootstrap::before {
+    width: 30%
+}
+
+#php::before {
+    width: 70%;
+}
+
+#laravel::before {
+    width: 50%;
+}
+
+#fuelphp::before {
+    width: 70%;
+}
+
+#mysql::before {
+    width: 60%;
+}
+
+#vscode::before {
+    width: 90%;
+}
+
+#git::before {
+    width: 70%
+}
+
+#docker::before {
+    width: 30%;
+}
+
+/* --------------------------------- */
+/* ----- works -----*/
+/* --------------------------------- */
+.works_content {
+    display: block;
+}
+
+.works_content li {
+    display: flex;
+    margin: 0;
+}
+
+.works_content li:nth-child(2) {
+    margin: 10rem 0;
+}
+
+.work_img {
+    border: 1px solid #E5E5E5;
+}
+.work_detail {
+    display: block;
+    margin-left: 8rem;
+}
+
+.work_detail a {
+    display: flex;
+}
+
+.work_img {
+    width: 40vw;
+}
+
+.work_description {
+    margin-top: 4em;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.stickarrow {
+    width: 40px;
+    height: 8px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: skew(45deg);
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.stickarrow:hover {
+    color: #D1C6B5;
+}
+/* --------------------------------- */
+/* ----- contact -----*/
+/* --------------------------------- */
+address {
+    font-style: normal;
+    font-size: 25px;
+}
+
+.back_to_top {
+    text-align: center;
+    width: 109px;
+    margin-right: 0;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.back_to_top:hover {
+    color: #D1C6B5;
+}
+
+.arrow-up {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    position: relative;
+    width: 0.1em;
+    height: 1em;
+    background: currentColor;
+    transition: color 0.2s ease;
+
+}
+  
+.arrow-up::before {
+    content: '';
+    width: 0.65em;
+    height: 0.65em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    position: absolute;
+    top: -0.05em;
+    right: 50%;
+    box-sizing: border-box;
+}
+
+.back_to_top p {
+    padding-top: 0.5em;
 }
 
 /* --------------------------------- */
 /* ----- フッター -----*/
 /* --------------------------------- */
 footer {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 footer ul {
     justify-content: center;
+}
+
+.copyright {
+    color: #fdf9f2;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
 }
