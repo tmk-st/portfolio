@@ -30,11 +30,18 @@ html {
     font-weight: 100;
 }
 
-body {
+.main_background {
     background-image: url(./images/circle.png), url(./images/circle.png), url(./images/circle.png);
 	background-position: left -10% top -5%, right -30% top 30%, left 50% bottom -20%;
 	background-size: 70vw auto, 40vw auto, 100vw auto;
 	background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+.profile_background {
+    background-image: url(./images/circle.png), url(./images/circle.png);
+	background-position: right -10% top -90%, left 0% bottom -60%;
+	background-size: 70vw auto, 60vw auto;
+	background-repeat: no-repeat, no-repeat;
 }
 
 img {
@@ -170,7 +177,7 @@ h1 span {
 }
 
 .top_title p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .lang_btn {
@@ -208,10 +215,19 @@ h1 span {
     height: 250px;
 }
 
+.about_textbox a {
+    text-align: right;
+    display: block;
+}
+
 /* --------------------------------- */
 /* ----- skill -----*/
 /* --------------------------------- */
-.skill_content {
+/* .skill_content {
+    display: flex;
+    justify-content: space-between;
+} */
+/* .skill_content {
     display: flex;
     justify-content: space-between;
 }
@@ -292,7 +308,7 @@ h1 span {
 
 #docker::before {
     width: 30%;
-}
+} */
 
 /* --------------------------------- */
 /* ----- works -----*/
@@ -389,4 +405,36 @@ footer ul {
     text-align: center;
     margin-top: 20px;
     font-size: 16px;
+}
+
+
+/* --------------------------------- */
+/* ----- career -----*/
+/* --------------------------------- */
+.career_content {
+    display: flex;
+}
+
+.career_content ul {
+    display: block;
+}
+
+.career_content li {
+    height: 5em;
+}
+
+/* --------------------------------- */
+/* ----- skill -----*/
+/* --------------------------------- */
+.skill_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill_detail {
+    width: 40%;
+}
+
+h4 {
+    text-align: center;
 }
