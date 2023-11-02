@@ -39,7 +39,7 @@ html {
 
 .profile_background {
     background-image: url(./images/circle.png), url(./images/circle.png);
-	background-position: right -10% top -90%, left 0% bottom -60%;
+	background-position: right -10% top -70%, left 0% bottom -50%;
 	background-size: 70vw auto, 60vw auto;
 	background-repeat: no-repeat, no-repeat;
 }
@@ -144,7 +144,7 @@ section {
     padding: 10rem;
 }
 
-section:first-child {
+.top {
     padding: 10rem 5rem;
 }
 
@@ -172,6 +172,7 @@ h1 span {
     vertical-align: text-top;
     padding-left: 5px;
 }
+
 .top_title {
     line-height: 1.4;
 }
@@ -202,11 +203,13 @@ h1 span {
     display: flex;
     line-height: 2;
 }
+
 .prof_img {
     width: 20vw;
     margin-left: auto;
     margin-right: 0;
 }
+
 .about_textbox, .about_img {
     width: 50%;
 }
@@ -223,13 +226,18 @@ h1 span {
 /* --------------------------------- */
 /* ----- skill -----*/
 /* --------------------------------- */
-/* .skill_content {
+.skill_content {
     display: flex;
     justify-content: space-between;
-} */
-/* .skill_content {
+}
+
+.skill_content {
     display: flex;
     justify-content: space-between;
+}
+
+.skill_detail {
+    width: 45%;
 }
 
 .skill_box {
@@ -270,11 +278,11 @@ h1 span {
     width: 50%;
 }
 
-#vue::before {
+#ant::before {
     width: 40%;
 }
 
-#jquery::before {
+#scss::before {
     width: 60%;
 }
 
@@ -282,44 +290,40 @@ h1 span {
     width: 30%
 }
 
-#php::before {
+#javascript::before {
     width: 70%;
 }
 
-#laravel::before {
+#vue::before {
     width: 50%;
-}
-
-#fuelphp::before {
-    width: 70%;
-}
-
-#mysql::before {
-    width: 60%;
-}
-
-#vscode::before {
-    width: 90%;
 }
 
 #git::before {
     width: 70%
 }
 
-#docker::before {
-    width: 30%;
-} */
+#vscode::before {
+    width: 90%;
+}
+
+#figma::before {
+    width: 40%;
+}
 
 /* --------------------------------- */
 /* ----- works -----*/
 /* --------------------------------- */
+.poster_content img {
+    width: 30%;
+}
+
 .works_content {
     display: block;
 }
 
 .works_content li {
     display: flex;
-    margin: 0;
+    margin: 0 0 70px 0;
 }
 
 .works_content li:not(:first-child):not(:last-child) {
@@ -329,6 +333,7 @@ h1 span {
 .work_img {
     border: 1px solid #E5E5E5;
 }
+
 .work_detail {
     display: block;
     margin-left: 8rem;
@@ -421,20 +426,4 @@ footer ul {
 
 .career_content li {
     height: 5em;
-}
-
-/* --------------------------------- */
-/* ----- skill -----*/
-/* --------------------------------- */
-.skill_content {
-    display: flex;
-    justify-content: space-between;
-}
-
-.skill_detail {
-    width: 45%;
-}
-
-h4 {
-    text-align: center;
 }
