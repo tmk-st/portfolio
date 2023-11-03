@@ -34,6 +34,8 @@ enBtn.addEventListener('click', function() {
 
 
 // 日本語・英語切り替えボタンを画面上部に固定
+const windowWidth = getWindowWidth();
+
 var btnElement = document.getElementById('lang_btn');
 var btnElementOffsetTop = btnElement.offsetTop;
 
@@ -43,9 +45,19 @@ window.addEventListener('scroll', function() {
   if (scrollTop >= btnElementOffsetTop - 50) {
     btnElement.style.position = 'fixed';
     btnElement.style.top = '2rem';
-    btnElement.style.right = '5rem';
+    if (windowWidth >= 520) {
+      // PCの場合
+      btnElement.style.right = '5rem';
+    } else {
+      // SPの場合
+      btnElement.style.right = '2rem';
+    }
   } else {
     btnElement.style.position = 'static';
   }
 });
 
+// ウィンドウ幅を取得
+function getWindowWidth() {
+  return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth || 0;
+}

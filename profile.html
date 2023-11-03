@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>About me | Tomoka Sato</title>
+        <title>About | Tomoka Sato</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
         <link rel="shortcut icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="style.css">
@@ -14,66 +14,86 @@
 
         <header id="header">
             <nav>
-                <ul>
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#works">Works</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
+                <ul class="header_content">
+                    <li class="header_item">
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li class="header_item">
+                        <a href=#skill>Skill</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="index.html#works">Works</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="index.html#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section>
-                <div class="container">
-                    <h3>Skill</h3>
-                    <div class="skill_content">
-                        <div class="skill_detail">
-                            <h4>コーディング</h4>
-                            <p>レスポンシブやアニメーションに対応したページを作成することが可能です。<br>
-                                プロジェクトにあったフレームワーク・設計手法を取り入れ、メンテナンスしやすく分かりやすいコードを心がけています。</p>
-                        </div>
-                        <div class="skill_detail">
-                            <h4>デザイン</h4>
-                            <p>様々な媒体から日々インプットを行い、国内外のトレンドを取り入れたデザインが得意です。<br>
-                                デザイン性だけでなく、UI/UXを意識した「理由のあるデザイン」を意識しています。</p>
-                        </div>
+            <div class="profile_top">
+                <div class="back_button">
+                    <a href="index.html">
+                        <span class="arrow back_arrow"></span>
+                    </a>
+                </div>
+                <div class="lang_btn" id="lang_btn">
+                    <div class="jp_btn" id="jp_btn">JP</div> / <div class="en_btn" id="en_btn">EN</div>
+                </div>
+            </div>
+
+            <section id="skill">
+                <h3>Skill</h3>
+                <div class="skill_content">
+                    <div class="skill_detail en_Gothic">
+                        <h4 class="jp">コーディング</h4>
+                        <h4 class="en">CODING</h4>
+                        <p>レスポンシブやアニメーション等にも対応した、デザインに忠実かつリッチなwebサイトを作成することが可能です。<br>
+                            プロジェクトにあったフレームワーク・設計手法を取り入れ、メンテナンスしやすく分かりやすいコードを心がけています。</p>
+                    </div>
+                    <div class="skill_detail en_Gothic">
+                        <h4>デザイン</h4>
+                        <p>様々な媒体から日々インプットを行い、国内外のトレンドを取り入れたデザインが得意です。<br>
+                            デザイン性だけでなく、UI/UXを意識した「理由のあるデザイン」を意識しています。<br>
+                            また、webサイト以外にもバナーやweb広告などの制作も行います。</p>
                     </div>
                 </div>
             </section>
 
-            <section id="skill">
-                <div class="container">
-                    <!-- <h3>Skill</h3> -->
-                    <div class="skill_content">
-                        <div class="skill_box">
-                            <h4 class="jp">言語 / FW</h4>
-                            <h4 class="en">Front-end</h4>
-                            <ul class="en_Gothic">
-                                <li id="html">HTML</li>
-                                <li id="css">CSS</li>
-                                <li id="scss">SCSS</li>
-                                <li id="ant">Ant Design</li>
-                                <li id="bootstrap">Bootstrap</li>
-                            </ul>
-                        </div>
-                        <div class="skill_box">
-                            <h4></h4>
-                            <ul class="en_Gothic">
-                                <li id="javascript">JavaScript</li>
-                                <li id="">TypeScript</li>
-                                <li id="vue">Vue.js</li>
-                                <li id="">React.js</li>
-                            </ul>
-                        </div>
-                        <div class="skill_box">
-                            <h4 class="jp">その他ツール</h4>
-                            <h4 class="en">DevOps</h4>
-                            <ul class="en_Gothic">
-                                <li id="git">Git/GitHub</li>
-                                <li id="vscode">VSCode</li>
-                                <li id="figma">Figma</li><br>
-                            </ul>
-                        </div>
+            <section>
+                <div class="skill_content">
+                    <div class="skill_box">
+                        <h4 class="jp">言語 / FW</h4>
+                        <h4 class="en">Front-end</h4>
+                        <ul class="en_Gothic">
+                            <li class="progress_bar" id="html">HTML</li>
+                            <li class="progress_bar" id="css">CSS</li>
+                            <li class="progress_bar" id="scss">SCSS</li>
+                            <li class="progress_bar" id="ant">Ant Design</li>
+                            <li class="progress_bar" id="bootstrap">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="skill_box">
+                        <h4></h4>
+                        <ul class="en_Gothic">
+                            <li class="progress_bar" id="javascript">JavaScript</li>
+                            <li class="progress_bar" id="vue">Vue.js</li>
+                            <li class="progress_bar" id="">Vuetify</li>
+                            <li class="progress_bar" id="">Nuxt.js</li>
+                            <li class="progress_bar" id="">React.js</li>
+                        </ul>
+                    </div>
+                    <div class="skill_box">
+                        <h4 class="jp">その他ツール</h4>
+                        <h4 class="en">DevOps</h4>
+                        <ul class="en_Gothic">
+                            <li class="progress_bar" id="git">Git/GitHub</li>
+                            <li class="progress_bar" id="vscode">VSCode</li>
+                            <li class="progress_bar" id="figma">Figma</li>
+                            <li class="progress_bar" id="">Photoshop</li>
+                            <li class="progress_bar" id="">XD</li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -81,11 +101,19 @@
 
         <footer>
             <nav>
-                <ul>
-                    <li><a href=#about>About</a></li>
-                    <li><a href=#skill>Skill</a></li>
-                    <li><a href=#works>Works</a></li>
-                    <li><a href=#contact>Contact</a></li>
+                <ul class="footer_content">
+                    <li class="footer_item">
+                        <a href="index.html#about">About</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href=#skill>Skill</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="index.html#works">Works</a>
+                    </li>
+                    <li class="footer_item">
+                        <a href="index.html#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
             <div class="copyright en_Gothic">
