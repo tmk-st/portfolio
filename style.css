@@ -101,18 +101,6 @@ section {
     padding: 10rem;
 }
 
-@media (max-width: 960px) {
-    section {
-        padding: 3rem;
-    }
-}
-
-@media (max-width: 520px) {
-    section {
-        padding: 1.5rem;
-    }
-}
-
 .arrow {
 	position: relative;
     display: inline-block;
@@ -157,7 +145,30 @@ section {
     color: #D1C6B5;
 }
 
+@media (max-width: 960px) {
+    section {
+        padding: 3rem;
+    }
+
+    .main_background {
+        background-position: left -10% top -5%, right -100%, left 50% bottom -40%;
+    }
+}
+
 @media (max-width: 520px) {
+    .main_background {
+        background-position: left -100% top -3%, right -100%, left 50% bottom -10%;
+        background-size: 90vw auto, 40vw auto, 100vw auto;
+    }
+    
+    .profile_background {
+        background-position: right -10% top -10%, left 0% bottom -5%;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+
     .lang_btn {
         background: rgba(253, 249, 242, 0.9);
         box-shadow: 0 0 10px 10px rgba(253, 249, 242, 0.9);
@@ -219,7 +230,7 @@ h1 span {
 
 @media (max-width: 520px) {
     .top {
-        padding: 10rem 2rem;
+        padding: 8rem 2rem;
     }
 
     .top_detail {
