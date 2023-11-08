@@ -509,6 +509,13 @@ address {
     width: 50%;
 }
 
+#vuetify::before {
+    width: 50%;
+}
+#nuxt::before {
+    width: 30%;
+}
+
 #git::before {
     width: 70%
 }
@@ -518,7 +525,15 @@ address {
 }
 
 #figma::before {
-    width: 40%;
+    width: 60%;
+}
+
+#photoshop::before {
+    width: 30%;
+}
+
+#xd::before {
+    width: 30%;
 }
 
 /* --------------------------------- */
