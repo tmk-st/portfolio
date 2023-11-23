@@ -392,6 +392,7 @@ h1 span {
 address {
     font-style: normal;
     font-size: 1.2rem;
+    cursor: default;
 }
 
 .back_to_top {
