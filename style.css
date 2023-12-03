@@ -329,7 +329,7 @@ h1 span {
 
 .works_item {
     display: flex;
-    margin: 0 0 70px 0;
+    margin: 0 0 15rem 0;
 }
 
 .works_item:not(:first-child):not(:last-child) {
