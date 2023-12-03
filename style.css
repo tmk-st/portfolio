@@ -338,12 +338,12 @@ h1 span {
 }
 
 .work_img {
-    border: 1px solid #E5E5E5;
     width: 40vw;
 }
 
 .work_detail {
     margin-left: 8rem;
+    margin-top: 30px;
 }
 
 .work_detail a {
