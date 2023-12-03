@@ -247,7 +247,6 @@ h1 span {
 }
 
 .back_arrow {
-    width: 1em;
     height: 0.1em;
     cursor: pointer;
 }
@@ -432,6 +431,11 @@ address {
 
 .skill_detail {
     width: 45%;
+    line-height: 1.5;
+
+    .en {
+        line-height: 2;
+    }
 }
 
 .skill_box {

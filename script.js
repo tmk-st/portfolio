@@ -37,23 +37,31 @@ enBtn.addEventListener('click', function() {
 const windowWidth = getWindowWidth();
 
 var btnElement = document.getElementById('lang_btn');
+var backBtnElement = document.getElementById('back_arrow'); // プロフページ内戻るボタン
 var btnElementOffsetTop = btnElement.offsetTop;
+var backBtnElementOffsetTop = backBtnElement.offsetTop;
 
 window.addEventListener('scroll', function() {
   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   if (scrollTop >= btnElementOffsetTop - 50) {
     btnElement.style.position = 'fixed';
+    backBtnElement.style.position = 'fixed';
     btnElement.style.top = '2rem';
+    backBtnElement.style.top = '2rem';
     if (windowWidth >= 520) {
       // PCの場合
       btnElement.style.right = '5rem';
+      backBtnElement.style.left = '5rem';
     } else {
       // SPの場合
       btnElement.style.right = '2rem';
+      backBtnElement.style.left = '2rem';
     }
   } else {
     btnElement.style.position = 'static';
+    backBtnElement.style.position = 'absolute';
+    backBtnElement.style.top = '6rem';
   }
 });
 
