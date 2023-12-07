@@ -329,15 +329,21 @@ h1 span {
 
 .works_item {
     display: flex;
-    margin: 0 0 15rem 0;
 }
 
 .works_item:not(:first-child):not(:last-child) {
-    margin: 10rem 0;
+    margin: 15rem 0;
 }
 
 .work_img {
-    width: 40vw;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.ios_img {
+    width: 35%;
+    margin-left: 2rem;
 }
 
 .work_detail {
