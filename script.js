@@ -32,36 +32,39 @@ enBtn.addEventListener('click', function() {
   toggleDisplay(en, 'block');
 });
 
+// ボタンを画面上に固定する共通処理
+function handleScroll(element, offsetTop, position, top, side) {
+  var scrollTop = document.documentElement.scrollTop;
 
-// 日本語・英語切り替えボタンを画面上部に固定
-const windowWidth = getWindowWidth();
+  if (scrollTop >= offsetTop - 50) {
+    element.style.position = position;
+    element.style.top = top;
+    element.style[side] = windowWidth >= 520 ? '5rem' : '2rem';
+  } else {
+    element.style.position = 'static';
+  }
+}
 
-var btnElement = document.getElementById('lang_btn');
-var backBtnElement = document.getElementById('back_arrow'); // プロフページ内戻るボタン
-var btnElementOffsetTop = btnElement.offsetTop;
-var backBtnElementOffsetTop = backBtnElement.offsetTop;
+const windowWidth = window.innerWidth;
+
+// 日本語・英語切り替えボタン
+var langBtnElements = document.getElementsByClassName('lang_btn');
+var langBtn = langBtnElements[0];
+var langBtnOffsetTop = langBtn.offsetTop;
 
 window.addEventListener('scroll', function() {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  handleScroll(langBtn, langBtnOffsetTop, 'fixed', '2rem', 'right');
+});
 
-  if (scrollTop >= btnElementOffsetTop - 50) {
-    btnElement.style.position = 'fixed';
-    backBtnElement.style.position = 'fixed';
-    btnElement.style.top = '2rem';
-    backBtnElement.style.top = '2rem';
-    if (windowWidth >= 520) {
-      // PCの場合
-      btnElement.style.right = '5rem';
-      backBtnElement.style.left = '5rem';
-    } else {
-      // SPの場合
-      btnElement.style.right = '2rem';
-      backBtnElement.style.left = '2rem';
-    }
-  } else {
-    btnElement.style.position = 'static';
-    backBtnElement.style.position = 'absolute';
-    backBtnElement.style.top = '6rem';
+// プロフページ内戻るボタン
+var backBtn = document.getElementById('back_arrow');
+var backBtnOffsetTop = backBtn.offsetTop;
+
+window.addEventListener('scroll', function() {
+  handleScroll(backBtn, backBtnOffsetTop, 'fixed', '2rem', 'left');
+  if (document.documentElement.scrollTop < langBtnOffsetTop - 50) {
+    backBtn.style.position = 'absolute';
+    backBtn.style.top = '6rem';
   }
 });
 
