@@ -99,7 +99,7 @@ h4 {
 }
 
 section {
-    padding: 10rem;
+    padding: 6rem 10rem;
 }
 
 .arrow {
@@ -394,13 +394,11 @@ h1 span {
 /* --------------------------------- */
 /* ----- contact -----*/
 /* --------------------------------- */
-address {
-    font-style: normal;
+.message {
     font-size: 1.2rem;
-    cursor: default;
 }
 
-.back_to_top {
+/* .back_to_top {
     text-align: center;
     width: 109px;
     margin-right: 0;
@@ -419,13 +417,13 @@ address {
 
 .back_to_top p {
     padding-top: 1em;
-}
+} */
 
-@media (max-width: 520px) {
+/* @media (max-width: 520px) {
     .back_to_top {
         visibility: hidden;
     }
-}
+} */
 
 /* --------------------------------- */
 /* ----- skill -----*/
@@ -445,7 +443,7 @@ address {
 }
 
 .skill_box {
-    width: 20%;
+    width: 25%;
 }
 
 .skill_content ul {
@@ -490,14 +488,42 @@ address {
 }
 
 #html::before {
-    width: 80%;
+    width: 90%;
 }
 
 #css::before {
+    width: 90%;
+}
+
+#scss::before {
     width: 70%;
 }
 
 #javascript::before {
+    width: 70%;
+}
+
+#typescript::before {
+    width: 30%;
+}
+
+#react::before {
+    width: 60%;
+}
+
+#vue::before {
+    width: 70%;
+}
+
+#nuxt::before {
+    width: 70%;
+}
+
+#tailwind::before {
+    width: 50%
+}
+
+#vuetify::before {
     width: 50%;
 }
 
@@ -505,47 +531,8 @@ address {
     width: 40%;
 }
 
-#scss::before {
-    width: 60%;
-}
-
 #bootstrap::before {
     width: 30%
-}
-
-#javascript::before {
-    width: 70%;
-}
-
-#vue::before {
-    width: 50%;
-}
-
-#vuetify::before {
-    width: 50%;
-}
-#nuxt::before {
-    width: 30%;
-}
-
-#git::before {
-    width: 70%
-}
-
-#vscode::before {
-    width: 90%;
-}
-
-#figma::before {
-    width: 60%;
-}
-
-#photoshop::before {
-    width: 30%;
-}
-
-#xd::before {
-    width: 30%;
 }
 
 /* --------------------------------- */
@@ -560,7 +547,7 @@ footer {
 }
 
 .footer_item {
-    margin-left: 3rem;
+    margin: 0 1rem;
 }
 
 .copyright {
