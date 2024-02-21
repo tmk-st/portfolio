@@ -5,45 +5,45 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    font-size: 20px;
-    font-family: 'Goldman', cursive;
-    box-sizing: border-box;
-    color: #3D3D39;
-    background-color: #fdf9f2;
+  font-size: 20px;
+  font-family: "Goldman", cursive;
+  box-sizing: border-box;
+  color: #3d3d39;
+  background-color: #fdf9f2;
 }
 
 @media (max-width: 960px) {
-    html {
-        font-size: 14px;
-    }
+  html {
+    font-size: 14px;
+  }
 }
 
 img {
-    display: block;
-    max-inline-size: 100%;
-    object-fit: contain;
+  display: block;
+  max-inline-size: 100%;
+  object-fit: contain;
 }
 
 ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: inherit;
-    transition: color 0.2s ease;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.2s ease;
 }
 
 a:hover {
-    color: #D1C6B5;
+  color: #d1c6b5;
 }
 
 /* --------------------------------- */
@@ -51,518 +51,497 @@ a:hover {
 /* --------------------------------- */
 
 h1 {
-    font-family: 'Gloock', serif;
-    font-size: 3rem;
-    font-weight: 500;
+  font-family: "Gloock", serif;
+  font-size: 3rem;
+  font-weight: 500;
 }
 
 h2 {
-    font-family: 'Gloock', serif;
-    font-size: 2rem;
-    font-style: italic;
+  font-family: "Gloock", serif;
+  font-size: 2rem;
+  font-style: italic;
 }
 
 h3 {
-    font-size: 1.5rem;
-    padding-bottom: 3rem;
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 h4 {
-    font-size: 1.2rem;
-    padding-bottom: 2rem;
-    font-weight: 400;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
 }
 
-.jp, .en_Gothic {
-    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+.jp,
+.en_Gothic {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 
 .en {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /* --------------------------------- */
 /* ----- レイアウト -----*/
 /* --------------------------------- */
 .main_background {
-    background-image: url(./images/circle.png), url(./images/circle.png), url(./images/circle.png);
-	background-position: left -10% top -5%, right -30% top 30%, left 50% bottom -20%;
-	background-size: 70vw auto, 40vw auto, 100vw auto;
-	background-repeat: no-repeat;
+  background-image: url(./images/circle.png), url(./images/circle.png),
+    url(./images/circle.png);
+  background-position: left -10% top -5%, right -30% top 30%,
+    left 50% bottom -20%;
+  background-size: 70vw auto, 40vw auto, 100vw auto;
+  background-repeat: no-repeat;
 }
 
 .profile_background {
-    background-image: url(./images/circle.png), url(./images/circle.png);
-	background-position: right -10% top -70%, left 0% bottom -50%;
-	background-size: 70vw auto, 60vw auto;
-	background-repeat: no-repeat;
+  background-image: url(./images/circle.png), url(./images/circle.png);
+  background-position: right -10% top -70%, left 0% bottom -50%;
+  background-size: 70vw auto, 60vw auto;
+  background-repeat: no-repeat;
 }
 
 section {
-    padding: 6rem 10rem;
+  padding: 6rem 10rem;
 }
 
 .arrow {
-	position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1;
-    background: currentColor;
-    width: 0.1em;
-    height: 1em;
-    top: 0.4em;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  background: currentColor;
+  width: 0.1em;
+  height: 1em;
+  top: 0.4em;
 }
 
 .arrow::before {
-    content: '';
-    width: 0.65em;
-    height: 0.65em;
-    border: 0.1em solid currentColor;
-    border-left: 0;
-    border-bottom: 0;
-    transform: rotate(-45deg);
-    transform-origin: top right;
-    position: absolute;
-    top: -0.05em;
-    right: 50%;
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border: 0.1em solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  transform: rotate(-45deg);
+  transform-origin: top right;
+  position: absolute;
+  top: -0.05em;
+  right: 50%;
 }
 
 .arrow:hover {
-    color: #D1C6B5;
+  color: #d1c6b5;
 }
 
 .lang_btn {
-    display: flex;
-    justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
-.jp_btn, .en_btn {
-    margin: 0 5px;
-    transition: color 0.2s ease;
+.jp_btn,
+.en_btn {
+  margin: 0 5px;
+  transition: color 0.2s ease;
 }
 
-.jp_btn:hover, .en_btn:hover {
-    cursor: pointer;
-    color: #D1C6B5;
+.jp_btn:hover,
+.en_btn:hover {
+  cursor: pointer;
+  color: #d1c6b5;
 }
 
 @media (max-width: 960px) {
-    section {
-        padding: 3rem;
-    }
+  section {
+    padding: 3rem;
+  }
 
-    .main_background {
-        background-position: left -10% top -5%, right -100%, left 50% bottom -40%;
-    }
+  .main_background {
+    background-position: left -10% top -5%, right -100%, left 50% bottom -40%;
+  }
 }
 
 @media (max-width: 520px) {
-    .main_background {
-        background-position: left -100% top -3%, right -100%, left 50% bottom -10%;
-        background-size: 90vw auto, 40vw auto, 100vw auto;
-    }
-    
-    .profile_background {
-        background-position: right -10% top -10%, left 0% bottom -5%;
-    }
-    
-    section {
-        padding: 1.5rem;
-    }
+  .main_background {
+    background-position: left -100% top -3%, right -100%, left 50% bottom -10%;
+    background-size: 90vw auto, 40vw auto, 100vw auto;
+  }
 
-    .lang_btn {
-        background: rgba(253, 249, 242, 0.9);
-        box-shadow: 0 0 10px 10px rgba(253, 249, 242, 0.9);
-        border-radius: 16px;
-    }
+  .profile_background {
+    background-position: right -10% top -10%, left 0% bottom -5%;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  .lang_btn {
+    background: rgba(253, 249, 242, 0.9);
+    box-shadow: 0 0 10px 10px rgba(253, 249, 242, 0.9);
+    border-radius: 16px;
+  }
 }
 
 /* --------------------------------- */
 /* ----- ヘッダー -----*/
 /* --------------------------------- */
 header {
-    padding-top: 2rem;
-    padding-right: 5rem;
+  padding-top: 2rem;
+  padding-right: 5rem;
 }
 
 .header_content {
-    justify-content: end;
+  justify-content: end;
 }
 
 .header_item {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 .icon {
-    width: 1.1rem;
+  width: 1.1rem;
 }
 
 @media (max-width: 520px) {
-    header {
-        padding-right: 0;
-    }
+  header {
+    padding-right: 0;
+  }
 
-    .header_content {
-        justify-content: center;
-    }
+  .header_content {
+    justify-content: center;
+  }
 
-    .header_item {
-        margin: 1rem;
-    }
+  .header_item {
+    margin: 1rem;
+  }
 }
 
 /* --------------------------------- */
 /* ----- top -----*/
 /* --------------------------------- */
 h1 span {
-    font-family: 'Goldman', cursive;
-    font-size: 0.8rem;
-    vertical-align: text-top;
-    padding-left: 5px;
+  font-family: "Goldman", cursive;
+  font-size: 0.8rem;
+  vertical-align: text-top;
+  padding-left: 5px;
 }
 
 .top {
-    padding: 10rem 5rem;
+  padding: 10rem 5rem;
 }
 
 .top_title {
-    line-height: 1.4;
+  line-height: 1.4;
 }
 
 .top_detail {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 520px) {
-    .top {
-        padding: 8rem 2rem;
-    }
+  .top {
+    padding: 8rem 2rem;
+  }
 
-    .top_detail {
-        font-size: 1rem;
-    }
+  .top_detail {
+    font-size: 1rem;
+  }
 }
 
 /* --------------------------------- */
 /* ----- top - profile -----*/
 /* --------------------------------- */
 .profile_top {
-    padding: 2rem 5rem 0;
+  padding: 2rem 5rem 0;
 }
 
 .back_arrow {
-    height: 0.1em;
-    cursor: pointer;
+  height: 0.1em;
+  cursor: pointer;
 }
 
 .back_arrow::before {
-    transform: rotate(-135deg);
-    top: 0.05em;
-    right: 105%;
+  transform: rotate(-135deg);
+  top: 0.05em;
+  right: 105%;
 }
 
 .back_arrow:hover {
-    color: #D1C6B5;
+  color: #d1c6b5;
 }
 
 @media (max-width: 960px) {
-    .profile_top {
-        padding: 3rem;
-    }
+  .profile_top {
+    padding: 3rem;
+  }
 }
 
 @media (max-width: 520px) {
-    .profile_top {
-        padding: 1.5rem;
-    }
+  .profile_top {
+    padding: 1.5rem;
+  }
 }
 
 /* --------------------------------- */
 /* ----- about -----*/
 /* --------------------------------- */
 .about_content {
-    display: flex;
-    line-height: 2;
+  display: flex;
+  line-height: 2;
 }
 
 .prof_img {
-    width: 20vw;
-    margin-left: auto;
-    margin-right: 0;
+  width: 20vw;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .about_textbox {
-    width: 50%;
-    height: 250px;
+  width: 50%;
+  height: 250px;
 }
 
 .about_img {
-    width: 50%;
+  width: 50%;
 }
 
 .about_textbox a {
-    display: flex;
-    width: fit-content;
-    margin-left: auto;
+  display: flex;
+  width: fit-content;
+  margin-left: auto;
 }
 
 @media (max-width: 520px) {
-    .about_textbox {
-        width: 100%;
-    }
+  .about_textbox {
+    width: 100%;
+  }
 
-    .about_content {
-        flex-direction: column-reverse;
-    }
+  .about_content {
+    flex-direction: column-reverse;
+  }
 
-    .about_img {
-        width: 100%;
-    }
+  .about_img {
+    width: 100%;
+  }
 
-    .prof_img {
-        width: 30vw;
-    }
+  .prof_img {
+    width: 30vw;
+  }
 }
 
 /* --------------------------------- */
 /* ----- works -----*/
 /* --------------------------------- */
 .works_content {
-    display: block;
+  display: block;
 }
 
 .works_item {
-    display: flex;
+  display: flex;
 }
 
 .works_item:not(:first-child):not(:last-child) {
-    margin: 15rem 0;
+  margin: 15rem 0;
 }
 
 .work_img {
-    width: 500px;
-    display: flex;
-    justify-content: center;
+  width: 500px;
+  display: flex;
+  justify-content: center;
 }
 
 .ios_img {
-    width: 35%;
-    margin-left: 2rem;
+  width: 35%;
+  margin-left: 2rem;
 }
 
 .work_detail {
-    margin-left: 8rem;
-    margin-top: 30px;
+  margin-left: 8rem;
+  margin-top: 30px;
 }
 
 .work_detail a {
-    display: flex;
+  display: flex;
 }
 
 .work_detail h4 {
-    padding-right: 1em;
+  padding-right: 1em;
 }
 
 .work_description {
-    margin-top: 4em;
-    font-size: 0.9rem;
-    line-height: 2;
+  margin-top: 4em;
+  font-size: 0.9rem;
+  line-height: 2;
 }
 
 .work_arrow {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 @media (max-width: 520px) {
-    .works_item {
-        display: block;
-    }
+  .works_item {
+    display: block;
+  }
 
-    .work_img {
-        width: 100%;
-    }
+  .work_img {
+    width: 100%;
+  }
 
-    .work_detail {
-        margin: 2rem 0;
-    }
+  .work_detail {
+    margin: 2rem 0;
+  }
 
-    .work_description {
-        margin-top: 2em;
-    }
+  .work_description {
+    margin-top: 2em;
+  }
 
-    .work_detail h4 {
-        padding-bottom: 0.5em;
-    }
+  .work_detail h4 {
+    padding-bottom: 0.5em;
+  }
 }
 
 /* --------------------------------- */
-/* ----- contact -----*/
+/* ----- message -----*/
 /* --------------------------------- */
+.message_content {
+  margin: 2rem 0;
+}
+
 .message {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
-
-/* .back_to_top {
-    text-align: center;
-    width: 109px;
-    margin-right: 0;
-    margin-left: auto;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.back_to_top .arrow {
-    transition: color 0.2s ease;
-}
-
-.back_to_top:hover {
-    color: #D1C6B5;
-}
-
-.back_to_top p {
-    padding-top: 1em;
-} */
-
-/* @media (max-width: 520px) {
-    .back_to_top {
-        visibility: hidden;
-    }
-} */
 
 /* --------------------------------- */
 /* ----- skill -----*/
 /* --------------------------------- */
 .skill_content {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .skill_detail {
-    width: 45%;
-    line-height: 1.5;
+  width: 45%;
+  line-height: 1.5;
 
-    .en {
-        line-height: 2;
-    }
+  .en {
+    line-height: 2;
+  }
 }
 
 .skill_box {
-    width: 25%;
+  width: 25%;
 }
 
 .skill_content ul {
-    display: block;
+  display: block;
 }
 
 .progress_bar {
-    padding-bottom: 5px;
-    position: relative;
-    border-bottom: 5px solid #E5E5E5;
+  padding-bottom: 5px;
+  position: relative;
+  border-bottom: 5px solid #e5e5e5;
 }
 
 .progress_bar:not(:first-child) {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .progress_bar::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    height: 5px;
-    background: #1B7AEA;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 5px;
+  background: #1b7aea;
 }
 
 @media (max-width: 520px) {
-    .skill_content {
-        display: block;
-    }
+  .skill_content {
+    display: block;
+  }
 
-    .skill_detail {
-        width: 100%;
-        margin-bottom: 5rem;
-    }
+  .skill_detail {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 
-    .skill_box {
-        width: 100%;
-    }
-
-    .skill_box:not(:first-child) {
-        margin-bottom: 5rem;
-    }
+  .skill_box {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 
 #html::before {
-    width: 90%;
+  width: 90%;
 }
 
 #css::before {
-    width: 90%;
+  width: 90%;
 }
 
 #scss::before {
-    width: 70%;
+  width: 70%;
 }
 
 #javascript::before {
-    width: 70%;
+  width: 70%;
 }
 
 #typescript::before {
-    width: 30%;
+  width: 30%;
 }
 
 #react::before {
-    width: 60%;
+  width: 60%;
 }
 
 #vue::before {
-    width: 70%;
+  width: 70%;
 }
 
 #nuxt::before {
-    width: 70%;
+  width: 70%;
 }
 
 #tailwind::before {
-    width: 50%
+  width: 50%;
 }
 
 #vuetify::before {
-    width: 50%;
+  width: 50%;
 }
 
 #ant::before {
-    width: 40%;
+  width: 40%;
 }
 
 #bootstrap::before {
-    width: 30%
+  width: 30%;
 }
 
 /* --------------------------------- */
 /* ----- フッター -----*/
 /* --------------------------------- */
 footer {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .footer_content {
-    justify-content: center;
+  justify-content: center;
 }
 
 .footer_item {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .copyright {
-    color: #fdf9f2;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 16px;
+  color: #fdf9f2;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
 @media (max-width: 520px) {
-    .footer_item {
-        margin: 1rem;
-    }
+  .footer_item {
+    margin: 1rem;
+  }
 }
